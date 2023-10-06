@@ -1,0 +1,31 @@
+/* TicketList.css */
+
+/* Style the ticket list container */
+.ticket-list-container {
+    padding: 20px;
+  }
+  
+  /* Style the list that contains the tickets */
+  .ticket-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style each list item (ticket) */
+  .ticket-list-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Style the ticket links */
+  .ticket-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Add hover effect on links */
+  .ticket-link:hover {
+    text-decoration: underline;
+  }
+  

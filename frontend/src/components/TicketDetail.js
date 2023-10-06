@@ -1,9 +1,12 @@
+// src/components/TicketDetail.js
+
 import React, { useEffect, useState } from 'react';
-import axios from 'axios'; // You need to have axios installed
-import { useParams } from 'react-router-dom';
+import axios from 'axios';
+import { useParams } from 'react-router-dom'; // Import useParams
+import './TicketDetail.css';
 
 function TicketDetail() {
-  const { id } = useParams();
+  const { id } = useParams(); // Get the id parameter from the route
   const [ticket, setTicket] = useState({});
 
   useEffect(() => {
