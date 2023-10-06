@@ -1,0 +1,35 @@
+/* Navigation.css */
+
+/* Style the navigation container (e.g., nav element) */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Style the list that contains the navigation links */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  /* Style each list item (navigation link) */
+  nav li {
+    margin-left: 20px; /* Add margin on the left to space out links */
+  }
+  
+  /* Style the links themselves */
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Add hover effect on links */
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
