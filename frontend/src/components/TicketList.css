@@ -5,27 +5,39 @@
     padding: 20px;
   }
   
-  /* Style the list that contains the tickets */
+  /* Style the list of tickets */
   .ticket-list {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  /* Style each list item (ticket) */
-  .ticket-list-item {
+  /* Style each ticket item */
+  .ticket-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Style the ticket links */
-  .ticket-link {
-    text-decoration: none;
-    color: #333;
+  /* Style the ticket title */
+  .ticket-title {
+    font-size: 18px;
     font-weight: bold;
   }
   
-  /* Add hover effect on links */
-  .ticket-link:hover {
-    text-decoration: underline;
+  /* Style the ticket status */
+  .ticket-status {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00a82d; /* Green color for open status, customize as needed */
+  }
+  
+  /* Add hover effect on ticket items */
+  .ticket-item:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
   }
   

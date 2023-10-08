@@ -1,0 +1,42 @@
+/* CustomerList.css */
+
+/* Style the customer list container */
+.customer-list-container {
+    padding: 20px;
+  }
+  
+  /* Style the list of customers */
+  .customer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style each customer item */
+  .customer-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the customer name */
+  .customer-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Style the customer details */
+  .customer-details {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Add hover effect on customer items */
+  .customer-item:hover {
+    background-color: #e5e5e5;
+    cursor: pointer;
+  }
+  
