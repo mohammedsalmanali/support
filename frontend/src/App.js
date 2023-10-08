@@ -9,6 +9,7 @@ import TicketDetail from './components/TicketDetail';
 import Register from './components/Register';
 import Login from './components/Login';
 import Logout from './components/Logout';
+import ProtectedRoute from './ProtectedRoute'; // Import the ProtectedRoute component
 
 function App() {
   // Create a state to manage authentication
@@ -30,9 +31,17 @@ function App() {
               <Route path="/register" element={<Register />} />
             </>
           )}
-          {/* Render other components */}
-          <Route path="/customers" element={<CustomerList />} />
-          <Route path="/tickets" element={<TicketList />} />
+
+          {/* Use Route for protected routes */}
+          <Route
+            path="/customers"
+            element={<ProtectedRoute component={CustomerList} isAuthenticated={isAuthenticated} />}
+          />
+          <Route
+            path="/tickets"
+            element={<ProtectedRoute component={TicketList} isAuthenticated={isAuthenticated} />}
+          />
+
           <Route path="/ticket/:id" element={<TicketDetail />} />
           {/* Add more routes as needed */}
         </Routes>
